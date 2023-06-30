@@ -19,6 +19,7 @@ class IpnValidationMixin(SettingsMixin, ValidationMixin, InvenTreePlugin):
     TITLE = "IPN Validator Plugin"
     DESCRIPTION = "Validates that IP + Revision is unique"
     VERSION = "0.1"
+    PUBLISH_DATE = "2023-06-19"
     AUTHOR = "Gunnar Strömme"
 
     def validate_part_ipn(self, ipn: str, part):
