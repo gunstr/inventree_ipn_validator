@@ -1,8 +1,10 @@
 """A plugin validating the combination of IPN and Revision uniqueness"""
 
 from plugin import InvenTreePlugin
-
 from plugin.mixins import SettingsMixin, ValidationMixin
+from part.models import Part
+
+from django.core.exceptions import ValidationError
 
 from . import PLUGIN_VERSION
 
