@@ -41,6 +41,15 @@ class IPNValidator(SettingsMixin, ValidationMixin, InvenTreePlugin):
             'default': 42,
         }
     }
+
+    def validate_part_ipn(self, ipn: str, part):
+        """Validate part IPN
+
+        The combination ipn and part.revision has to be unique.
+        """
+        
+        if Part.objects.exclude(pk=part.pk).filter(revision=part.revision, IPN=ipn).exists(): 
+             raise ValidationError("Part with this IPN and Revision already exists.") 
     
     
     
