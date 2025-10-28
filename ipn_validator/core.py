@@ -34,15 +34,15 @@ class IPNValidator(SettingsMixin, ValidationMixin, InvenTreePlugin):
     
     # Plugin settings (from SettingsMixin)
     # Ref: https://docs.inventree.org/en/latest/plugins/mixins/settings/
-    SETTINGS = {
-        # Define your plugin settings here...
-        'CUSTOM_VALUE': {
-            'name': 'Custom Value',
-            'description': 'A custom value',
-            'validator': int,
-            'default': 42,
-        }
-    }
+    # SETTINGS = {
+    #     # Define your plugin settings here...
+    #     'CUSTOM_VALUE': {
+    #         'name': 'Custom Value',
+    #         'description': 'A custom value',
+    #         'validator': int,
+    #         'default': 42,
+    #     }
+    # }
 
     def validate_part_ipn(self, ipn: str, part):
         """Validate part IPN
