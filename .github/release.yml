@@ -1,0 +1,20 @@
+# .github/release.yml
+
+changelog:
+  categories:
+    - title: Breaking Changes 🛠
+      labels:
+        - breaking
+    - title: New Features 🎉
+      labels:
+        - Semver-Minor
+        - enhancement
+    - title: Bug Fixes
+      labels:
+        - bug
+    - title: Refactor
+      labels:
+        - refactor
+    - title: Other Changes
+      labels:
+        - "*"
