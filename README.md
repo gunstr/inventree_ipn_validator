@@ -4,12 +4,6 @@ A plugin validating the combination of IPN and Revision uniqueness
 
 ## Installation
 
-### InvenTree Plugin Manager
-
-... todo ...
-
-### Command Line 
-
 To install manually via the command line, with the venv activated run the following command:
 
 ```bash
